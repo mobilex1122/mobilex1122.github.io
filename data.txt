@@ -1,0 +1,3 @@
+vydavatel: Mobilex1122
+vývojář: Mobilex1122
+1.2
