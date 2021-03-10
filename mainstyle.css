@@ -1,4 +1,10 @@
 h1 {color: red;}
+@keyframes load {
+  0% {width: 10%}
+  50% {width: 20%}
+  100% {width: 10%}
+
+}
 
 body {
   background: black;
@@ -9,8 +15,8 @@ body {
 
 button {
   background-color: black;
-  color: black;
-  border: 1px solid white;
+  color: white;
+  border: 2px solid white;
   font-size: 15px;
   transition-duration: 0.4s;
   width: 10%;
