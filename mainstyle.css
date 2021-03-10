@@ -34,6 +34,7 @@ button:hover {
   font-size: 20px;
   width: 15%;
   border-radius: 2px;
+  box-shadow: 0 12px 16px 0 rgba(2555,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,255.19);
 }
 button.od:hover {
   background-color: black;
