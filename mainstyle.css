@@ -1,7 +1,7 @@
 h1 {color: red;}
 @keyframes load {
-  from {text-align: right;}
-  to {text-align: left;}
+  from {left: 0%}
+  to {left: 100%}
 }
 body {
   background: black;
