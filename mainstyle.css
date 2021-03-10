@@ -45,6 +45,7 @@ button.od:hover {
 }
 button:selection {
   border-color: white;
+  border-radius: 0px;
 }
 
 button.home:hover {
