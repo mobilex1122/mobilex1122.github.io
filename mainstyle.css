@@ -5,6 +5,7 @@ h1 {color: red;
 body {
   background-image: url("bg2.png") ;
   background-size: auto;
+  background-position: center;
   color: white;
   text-align: left;
 
