@@ -7,7 +7,6 @@ button {
   font-size: 15px;
   transition-duration: 0.4s;
   width: 10%;
-  float: left;
 }
 button:hover {
   background-color: white;
