@@ -3,7 +3,8 @@ h1 {color: red;
 
 
 body {
-  background-image: url("bg2.png") ;
+  background-image: url("logo.png") ;
+
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
