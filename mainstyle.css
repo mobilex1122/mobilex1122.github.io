@@ -3,9 +3,9 @@ h1 {color: red;
 
 
 body {
-  background-image: url("logo.jpg") ;
+  background-image: url("loopbg.png") ;
 
-  background-size: 50%;
+  background-size: 10%;
   background-repeat: repeat;
   background-position: center;
   color: white;
