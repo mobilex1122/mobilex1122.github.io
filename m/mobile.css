@@ -6,3 +6,9 @@ button {
   border: 5px solid white; /* Green */
   font-size: 40px
 }
+button:hover {
+  background-color: white; /* Green */
+  color: black;
+  border: 5px solid white; /* Green */
+  font-size: 40px
+}
