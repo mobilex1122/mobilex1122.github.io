@@ -3,11 +3,7 @@ h1 {color: red;
 
 
 body {
-  background-image: url("loopbg.png") ;
-
-  background-size: cover;
-  background-repeat: repeat-x;
-  background-position: left;
+  background: black;
   color: white;
   text-align: left;
 
