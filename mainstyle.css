@@ -1,7 +1,7 @@
 h1 {color: red;}
 @keyframes load {
-  from {left: 10000px}
-  to {left: 0px}
+  from {color: rgba(0,0,0,0)}
+  to {color: white}
 }
 body {
   background: black;
