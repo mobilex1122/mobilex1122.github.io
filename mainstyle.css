@@ -3,12 +3,13 @@ body {background: black; color: white; text-align: left;}
 button {
   background-color: black;
   color: white;
-  border: 5px solid white; /* Green */
-  font-size: 10px
+  border: 2px solid white; /* Green */
+  font-size: 15px;
+  transition-duration: 0.4s;
 }
 button:hover {
   background-color: white; /* Green */
   color: black;
-  border: 5px solid white; /* Green */
-  font-size: 10px
+  border: 2px solid white; /* Green */
+  font-size: 15px;
 }
