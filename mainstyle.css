@@ -4,7 +4,8 @@ h1 {color: red;
 
 body {
   background-image: url("bg2.png") ;
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   color: white;
   text-align: left;
