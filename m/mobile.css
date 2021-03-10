@@ -4,7 +4,7 @@ button.down {
   background-color: black;
   color: white;
   border: 5px solid white; /* Green */
-  font-size: 40px;
+  font-size: 45px;
   transition-duration: 0.4s;
   width: 100%;
 }
@@ -19,7 +19,7 @@ button.down:hover {
   background-color: red;
   color: white;
   padding: 16px;
-  font-size: 40px;
+  font-size: 45px;
   border: none;
   cursor: pointer;
   width: 100%;
