@@ -19,7 +19,7 @@ button.down:hover {
   background-color: #4CAF50;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -41,6 +41,7 @@ button.down:hover {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  width: 100%
 }
 
 /* Links inside the dropdown */
