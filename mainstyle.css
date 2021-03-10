@@ -7,11 +7,12 @@ button {
   font-size: 15px;
   transition-duration: 0.4s;
   width: 10%;
+  text-overflow: ellipsis;
 }
 button:hover {
   background-color: white; /* Green */
   color: black;
   border: 2px solid white; /* Green */
   font-size: 20px;
-  width: 10%;
+  width: 15%;
 }
