@@ -37,10 +37,11 @@ button:hover {
 }
 button.od:hover {
   background-color: black;
-  color: black;
+  color: white;
   border: 2px solid white;
   font-size: 15px;
-  width: 15%;
+  width: 10%;
+  border-radius: 0px;
 }
 
 button.home:hover {
