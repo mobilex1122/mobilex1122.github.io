@@ -28,7 +28,7 @@ button.down:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-  text-align: left;
+  align-self: flex-start;
 }
 
 /* Dropdown Content (Hidden by Default) */
