@@ -15,3 +15,10 @@ button:hover {
   font-size: 20px;
   width: 15%;
 }
+button.home:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  font-size: 20px;
+  width: 15%;
+}
