@@ -6,12 +6,12 @@ button {
   border: 2px solid white; /* Green */
   font-size: 15px;
   transition-duration: 0.4s;
-  width: 1%;
+  width: 10%;
 }
 button:hover {
   background-color: white; /* Green */
   color: black;
   border: 2px solid white; /* Green */
-  font-size: 15px;
+  font-size: 20px;
   width: 20%;
 }
