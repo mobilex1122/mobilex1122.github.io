@@ -8,7 +8,7 @@ button.down {
   transition-duration: 0.4s;
   width: 25%;
 }
-button:hover {
+button.down:hover {
   background-color: white; /* Green */
   color: black;
   border: 5px solid white; /* Green */
