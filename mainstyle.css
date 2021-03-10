@@ -24,7 +24,7 @@ button.od {
   font-size: 15px;
   transition-duration: 0.4s;
   width: 10%;
-  height: 50px
+  height: 10%
   float: left;
 }
 
@@ -42,7 +42,7 @@ button.od:hover {
   border: 2px solid red;
   font-size: 15px;
   width: 10%;
-  height: 50px
+  height: 10%
   border-radius: 0px;
 }
 
