@@ -1,5 +1,15 @@
 h1 {color: red;}
-body {background: black; color: white; text-align: left;}
+@keyframes load {
+  from {text-align: right;}
+  to {text-align: left;}
+}
+body {
+  background: black;
+  color: white;
+  text-align: left;
+  animation-name: load;
+  animation-duration: 4s;
+}
 
 button {
   background-color: black;
