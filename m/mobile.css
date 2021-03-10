@@ -6,7 +6,7 @@ button {
   border: 5px solid white; /* Green */
   font-size: 40px;
   transition-duration: 0.4s;
-  width: 100%;
+  width: 20%;
 }
 button:hover {
   background-color: white; /* Green */
