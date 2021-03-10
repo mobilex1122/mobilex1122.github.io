@@ -21,32 +21,10 @@ button {
   font-size: 15px;
   transition-duration: 0.4s;
   width: 10%;
+  animation-name: load;
+  animation-duration: 2s;
+}
 
-}
-button.1 {
-  animation-name: load;
-  animation-duration: 1s;
-}
-button.2 {
-  animation-name: load;
-  animation-duration: 1s;
-  animation-delay: 1s;
-}
-button.3 {
-  animation-name: load;
-  animation-duration: 1s;
-  animation-delay: 2s;
-}
-button.4 {
-  animation-name: load;
-  animation-duration: 1s;
-  animation-delay: 3s;
-}
-button.5 {
-  animation-name: load;
-  animation-duration: 1s;
-  animation-delay: 4s;
-}
 button:hover {
   background-color: white;
   color: black;
