@@ -4,7 +4,7 @@ button.down {
   background-color: black;
   color: white;
   border: 5px solid white; /* Green */
-  font-size: 45px;
+  font-size: 55px;
   transition-duration: 0.4s;
   width: 100%;
 }
@@ -12,14 +12,14 @@ button.down:hover {
   background-color: white; /* Green */
   color: black;
   border: 5px solid white; /* Green */
-  font-size: 40px;
+  font-size: 55px;
 }
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: red;
   color: white;
   padding: 16px;
-  font-size: 45px;
+  font-size: 55px;
   border: none;
   cursor: pointer;
   width: 100%;
