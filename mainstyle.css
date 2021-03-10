@@ -4,6 +4,7 @@ h1 {color: red;
 
 body {
   background-image: url("bg2.png") ;
+  background-size: auto;
   color: white;
   text-align: left;
 
