@@ -5,6 +5,24 @@ h1 {color: red;}
   100% {width: 10%}
 
 }
+
+
+body {
+  background: black;
+  color: white;
+  text-align: left;
+
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  width: 10%;
+
+}
 button.1 {
   animation-name: load;
   animation-duration: 1s;
@@ -28,23 +46,6 @@ button.5 {
   animation-name: load;
   animation-duration: 1s;
   animation-delay: 4s;
-}
-
-body {
-  background: black;
-  color: white;
-  text-align: left;
-
-}
-
-button {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  font-size: 15px;
-  transition-duration: 0.4s;
-  width: 10%;
-
 }
 button:hover {
   background-color: white;
