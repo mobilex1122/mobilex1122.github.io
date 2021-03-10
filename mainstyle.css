@@ -5,7 +5,35 @@ h1 {color: red;}
   100% {width: 10%}
 
 }
-
+button.1 {
+  animation-name: load;
+  animation-duration: 1s;
+}
+button.1 {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+button.1 {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+button.1 {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+button.1 {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 4s;
+}
+button.1 {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 5s;
+}
 body {
   background: black;
   color: white;
