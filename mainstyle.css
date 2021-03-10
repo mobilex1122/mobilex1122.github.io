@@ -1,5 +1,14 @@
 h1 {color: red;}
 body {background: black; color: white; text-align: left;}
+link.logo {
+  width:200px;
+  height:200px;
+}
+link.logo:hover {
+  width:500px;
+  height:500px;
+}
+
 button {
   background-color: black;
   color: white;
