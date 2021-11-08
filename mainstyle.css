@@ -3,9 +3,11 @@ h1 {color: red;
 
 
 a.info {
+  transition-duration: 0.4s;
   color: white;
-  background-color: white;
+  background-color: black;
   border-radius: 6px;
+  pading: 2px;
 }
 
 a.info:hover {
