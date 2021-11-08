@@ -4,10 +4,13 @@ h1 {color: red;
 
 a.info {
   color: white;
-  backgroun-color: white;
+  background-color: white;
   border-radius: 6px;
 }
 
+a.info:hover {
+  background-color: red;
+}
 
 body {
   background: black;
