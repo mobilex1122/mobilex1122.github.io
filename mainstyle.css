@@ -9,6 +9,7 @@ a.info {
 }
 
 a.info:hover {
+  color: rgb(0.8,0.8,0.8);
   background-color: red;
 }
 
