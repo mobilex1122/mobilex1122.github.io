@@ -6,8 +6,7 @@ a.info {
   transition-duration: 0.4s;
   color: white;
   background-color: black;
-  border-radius: 6px;
-  pading: 2px;
+  border-radius: 0px;
 }
 
 a.info:hover {
