@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
 div {
     width: 600px;
 
@@ -9,6 +12,7 @@ div {
     height: 0;
 }
 body {
+    font-family: 'Ubuntu', sans-serif;
     background-image: url(/web-bg-main.png);
     background-color: rgb(36, 36, 36);
     background-position-y: top;
@@ -41,6 +45,13 @@ p.info {
     margin: 0;
     font-size: 15px;
 }
+
+p.version {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
 @media only screen and (max-device-width: 480px) {
     div {
         width: 100%;
@@ -64,5 +75,8 @@ p.info {
         padding: 0;
         margin-top: 60px;
         font-size: 30px;
+    }
+    p.version {
+        font-size: 40px;
     }
 }
