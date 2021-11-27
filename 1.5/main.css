@@ -46,7 +46,7 @@ h1:hover {
     text-shadow: 0px 0px 0.2em rgb(255, 255, 255);
 }
 
-.name h1 img {
+div.name h1 img {
     filter: blur(5px);
     opacity: 0;
     width: 25px;
@@ -57,7 +57,7 @@ h1:hover {
     margin 200ms ease-in-out;
 }
 
-.name h1:hover img {
+div.name h1:hover img {
     filter: blur(0px);
     opacity: 1;
     margin: 0 10px;
