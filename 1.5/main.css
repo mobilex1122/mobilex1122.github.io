@@ -154,11 +154,13 @@ div.projects h2 {
     div.projects {
         width: 100%;
     }
-    .name h1 img {
-        width: 0;
-        margin: 0;
+    div.name h1 img {
+        filter: blur(0px);
+        opacity: 0;
+        width: 0px;
+        margin: 0 0px;
     }
-    .name h1:hover img {
+    div.name h1:hover img {
         margin: 0;
     }
 
