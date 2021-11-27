@@ -3,6 +3,18 @@
         <title>Mobilex1122</title>
         <link rel="stylesheet" type="text/css" href="main.css" media="all" />
     </head>
+    <script language="Javascript">
+        
+        var brave = navigator.brave.isBrave();
+            if (brave) {
+                var newLine = "\r\n"
+                var msg = "This web have some problems with brave browser."
+                msg += newLine;
+                msg += "Some of the functions may not work properly."
+                alert(msg);
+            }
+        
+    </script>
     <body>
         <img class="logo" src="web-bg-main.png">
 
