@@ -3,8 +3,11 @@
     <head>
         <title>Mobilex1122</title>
         <link rel="stylesheet" type="text/css" href="main.css" media="all" />
+    
+        
     </head>
     <script language="Javascript">
+        try {
         var brave = navigator.brave.isBrave();
         if (brave) {
             var newLine = "\r\n"
@@ -13,6 +16,11 @@
             msg += "Some of the functions may not work properly."
             alert(msg);
         }
+        }
+        catch(err){
+            console.debug("no problems")
+        }
+
     </script>
     <body>
         <img class="logo" src="web-bg-main.png">
