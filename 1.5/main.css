@@ -9,14 +9,22 @@
     100% {opacity: 1;}
 }
 
-@keyframes backgroundshow {
-
+@keyframes uplogoshow {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 
+
+  
 .bg {
     animation-name: backgroundshow;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
+    animation-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -27,20 +35,59 @@
     bottom: 0;
     z-index: -1;
     filter: blur(3px);
-    
+
     
   }
+
+button.nothing {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    transition: 
+        filter 400ms
+    ;
+}
+button.nothing:hover {
+    background-color: transparent;
+    box-shadow: none;
+    filter:brightness(1.5); 
+}
+button.nothing:focus {
+    background-color: transparent;
+    box-shadow: none;
+    filter:brightness(1.5);  
+}
+
+
+button.nopading {
+    width: 100%;
+    height: fit-content;
+    max-height: 492px;
+    max-width: 1080px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1px;
+}
 
 html {
     background-color: rgb(0, 0, 0);
 }
 body {
+
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     margin-top: 0;
     padding-top: 0;
 }
 img.logo {
+    transform: translateY(-100%);
+    animation-name: uplogoshow;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.130, 1.490, 0.435, 0.760);
+    animation-fill-mode: forwards;
     src: local("/web-bg-main.png");
     position: sticky;
     width: 100%;
@@ -48,8 +95,8 @@ img.logo {
     max-height: 492px;
     max-width: 1080px;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -86,7 +133,6 @@ div.name h1:hover img {
 
 
 p {
-    width: 100%;
     padding: 20px 10px;
 
     color: white;
@@ -121,7 +167,7 @@ button {
 
 button:hover , button:focus {
     text-shadow: rgb(0, 0, 0) 0 0px 0.4em;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(156, 0, 0);
     box-shadow: inset 0 0px 0.4em rgb(0, 0, 0);
     
 }
