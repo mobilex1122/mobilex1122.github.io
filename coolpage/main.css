@@ -1,0 +1,200 @@
+
+/* intro animace */
+
+@keyframes loaderleft {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-25%);}
+}
+@keyframes loaderright {
+    0% {transform: translateX(0px);}
+    100% {transform: translateY(25%);}
+}
+@keyframes loader {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    99% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(00px);
+    }
+    100% {
+        transform: translateX(-150%);}
+
+}
+
+.loader {
+    cursor:progress;
+    animation-name: loader;
+    animation-duration: 500ms;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+    border:none;
+    border-radius: 0;
+    transform: translateY(0px);
+
+
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadleft {
+    animation-name: loaderleft;
+    animation-duration: 500ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 60px;
+    margin: 0;
+
+}
+
+.loadright {
+    animation-name: loaderright;
+    animation-duration: 500ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 60px;
+    margin: 0;
+
+}
+
+
+
+/* normal code */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(31, 31, 31);
+    margin: 0;
+}
+
+.bg {
+    position: fixed;
+    z-index: -10;
+    filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+
+}
+
+
+div {
+    background-color: rgba(0, 0, 0, 0.466);
+    margin: 0px 0;
+
+}
+
+div h1 {
+    padding: 20 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+}
+div p {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 30 0px;
+    margin: 0 20px;
+}
+
+.menu a {
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    color: white;
+    box-shadow: blue 0px 0px 0px;
+
+    transition: box-shadow 400ms ,
+    background-color 400ms,
+    color 400ms,
+    padding-bottom 400ms;
+
+}
+
+.menu a:hover {
+    background-color: rgba(26, 26, 26, 0.432);
+    color: rgb(113, 113, 255);
+    padding-bottom: 11px;
+    box-shadow: blue 0px 5px 0px;
+}
+
+
+div.menu {
+    position:fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(29, 29, 29);
+    height: 50px;
+    box-shadow: blue 0px 0px 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: background-color 400ms;
+}
+
+div.menu:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+div.menu:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.icon {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+    transition: transform 400ms;
+}
+
+hr {
+    height: 100px;
+    border: none;
+    margin: 0px;
+}
+
+img.icon:hover {
+    transform: rotate(0.25turn);
+}
+
+.shadow {
+    position: fixed;
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 2;
+    top: 93%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 59%, rgba(0,0,0,1) 100%);;
+    width: 100%;
+    height: 10%;
+}
+
