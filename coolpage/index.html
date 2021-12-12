@@ -1,4 +1,4 @@
-<html>
+<html id="scroller">
     <link rel="stylesheet" type="text/css" href="main.css" media="all" />
 
 
@@ -22,6 +22,7 @@
             function uncheck() {
                 document.getElementById("menu-btn").checked = false;
             }
+
         </script>
     </head>
 
@@ -34,12 +35,12 @@
 
         </div>
         <div class="bg">
-
+        </div>
         </div>
         <div class="menu">
             <img class="icon" src="logo.png">
             <input class="menu-btn" type="checkbox" id="menu-btn" >
-            <label class="menu-icon" for="menu-btn"><img class="navicon" src="menu.png"></label>
+            <label class="menu-icon" for="menu-btn"><img class="navicon" src="menu.png"><img class="navicon-a" src="menu-a.png"></label>
             <ul class="menulist">
             <li><a href="#coolpage" onclick="uncheck()">Coolpage</a></li>
             <li><a href="#what-it-is" onclick="uncheck()">What it is?</a></li>
