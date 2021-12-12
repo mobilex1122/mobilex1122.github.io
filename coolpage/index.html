@@ -2,11 +2,29 @@
     <link rel="stylesheet" type="text/css" href="main.css" media="all" />
 
 
+    <!--Style settings-->
+    <style>
+        :root {
+            /* menu height */
+            --menu-height-pc: 250px;
+            --menu-height-mobile: 400px;
+
+            /* Style */
+            --background-blur: 10px;
+        }
+    </style>
+
+
 
     <head>
         <title>Mobilex1122-CoolPage</title>
-
+        <script>
+            function uncheck() {
+                document.getElementById("menu-btn").checked = false;
+            }
+        </script>
     </head>
+
     <body>
         <!-- loader -->
         <div class="loader">
@@ -20,10 +38,14 @@
         </div>
         <div class="menu">
             <img class="icon" src="logo.png">
-            <a href="#coolpage">Coolpage</a>
-            <a href="#what-it-is">What it is?</a>
-            <a href="#how-to-use">How to use it?</a>
-            <a href="#syntax">Syntax</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" >
+            <label class="menu-icon" for="menu-btn"><img class="navicon" src="menu.png"></label>
+            <ul class="menulist">
+            <li><a href="#coolpage" onclick="uncheck()">Coolpage</a></li>
+            <li><a href="#what-it-is" onclick="uncheck()">What it is?</a></li>
+            <li><a href="#how-to-use" onclick="uncheck()">How to use it?</a></li>
+            <li><a href="#syntax" onclick="uncheck()">Syntax</a></li>
+            </ul>
         </div>
 
         <div class="shadow"></div>
