@@ -376,6 +376,10 @@ img.icon:hover {
     }
    .navicon-a {
       height: 100px;
-      width: 100px;
    }
+    .menu-btn:checked ~ .menu-icon .navicon-a {
+    height: 100px;
+    filter: blur(0px);
+    opacity: 1;
+    }
 }
