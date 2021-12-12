@@ -374,4 +374,7 @@ img.icon:hover {
     .menu-btn:checked ~ .menulist {
         max-height: var(--menu-height-mobile);
     }
+   .navicon-a {
+      height: 20px;
+   }
 }
