@@ -297,6 +297,39 @@ img.icon:hover {
     height: 10%;
 }
 
+
+div.warn {
+    color: red;
+    background-color: rgb(255, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    transition: border 200ms, padding 200ms;
+}
+div.warn p {
+    background-color: black;
+    padding: 50px;
+    margin: 0;
+    transition: border 200ms, padding 200ms, background-color 200ms, color 200ms;
+    color: red;
+    background-color: black;
+}
+div.warn:hover {
+    padding: 50px;
+    
+}
+
+div.warn:hover p {
+    color: rgb(0, 0, 0);
+    background-color: red;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 0px;
+
+}
+
 @media screen and (max-device-width: 480px) {
     .loader {
         cursor:progress;
