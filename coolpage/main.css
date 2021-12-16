@@ -120,9 +120,8 @@ li a {
 li a:hover {
     color: blue;
     background-color: rgb(48, 48, 48);
-    box-shadow: rgb(129, 129, 255) 0 4px 0px;
-    padding-bottom: 16px;
-    margin-bottom: 4px;
+    box-shadow: inset rgb(129, 129, 255) 0 -4px 0px;
+    padding-bottom: 20px;
 }
 
 .menu-btn {
