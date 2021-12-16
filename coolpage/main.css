@@ -1,6 +1,7 @@
 
 :root {
     --bounce: cubic-bezier(0.485, -0.600, 0.455, 0.980);
+
     --menu-height-pc: 250px;
     --menu-height-mobile: 400px;
     --background-blur: 5px
@@ -158,41 +159,42 @@ ul {
 .menu-icon {
     cursor: pointer;
     float: right;
-    padding: 15px 20px;
+    padding: 10px 20px;
     position: relative;
     user-select: none;
 }
 .menu-icon .navicon {
     display: block;
-    height: 20px;
+    height: 30px;
     position: relative;
     transform: rotate(0turn);
     filter: blur(0px);
-    transition: filter 400ms , opacity 200ms;
-    width: 20px;
+    transition: filter 400ms , opacity 200ms, transform 400ms;
+    width: 30px;
 }
 
 .navicon-a {
     display: block;
-    height: 20px;
+    height: 30px;
+    width: 30px;
     position: fixed;
-    filter: blur(10px);
+    filter: blur(5px);
     opacity: 0;
     transition: filter 400ms , opacity 200ms;
-    height: 0px;
     padding: 0;
     overflow: hidden;
-    transform: translateY(-20px);
-    transition: filter 400ms , opacity 200ms;
+    transform: translateY(-30px) scale(1.9,1.9);
+    transition: filter 400ms , opacity 200ms, transform 400ms;
 }
 .menu-btn:checked ~ .menu-icon .navicon {
-    filter: blur(10px);
+    transform: scale(0.1,0.1);
+    filter: blur(5px);
 }
 
 .menu-btn:checked ~ .menu-icon .navicon-a {
-    height: 20px;
-    filter: blur(0px);
+    transform: translateY(-30px) scale(1,1);
     opacity: 1;
+    filter: blur(0px);
 }
 
 .bganim {
@@ -204,7 +206,6 @@ ul {
     background-image: url("logo.png");
     background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(90deg);
 }
 
 .bg {
@@ -374,4 +375,45 @@ img.icon:hover {
     .menu-btn:checked ~ .menulist {
         max-height: var(--menu-height-mobile);
     }
+    .menu-icon {
+        cursor: pointer;
+        float: right;
+        padding: 20px 20px;
+        position: relative;
+        user-select: none;
+    }
+    .menu-icon .navicon {
+        display: block;
+        height: 100px;
+        position: relative;
+        transform: rotate(0turn);
+        filter: blur(0px);
+        transition: filter 400ms , opacity 200ms, transform 400ms;
+        width: 100px;
+    }
+    
+    .navicon-a {
+        display: block;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        filter: blur(5px);
+        opacity: 0;
+        transition: filter 400ms , opacity 200ms;
+        padding: 0;
+        overflow: hidden;
+        transform: translateY(-100px) scale(1,1);
+        transition: filter 400ms , opacity 200ms, transform 400ms;
+    }
+    .menu-btn:checked ~ .menu-icon .navicon {
+        transform: scale(0.1,0.1);
+        filter: blur(0px);
+    }
+    
+    .menu-btn:checked ~ .menu-icon .navicon-a {
+        transform: translateY(-100px) scale(1,1);
+        opacity: 1;
+        filter: blur(0px);
+    }
+    
 }
