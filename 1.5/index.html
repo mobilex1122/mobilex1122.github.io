@@ -28,7 +28,33 @@
         console.log(cMonth);
         console.log(cYear);
 
+
+        function getURLValues() {
+
+            var search = window.location.search.replace(/^\?/,'').replace(/\+/g,' ');
+            var values = {};
+
+            if (search.length) {
+                var part, parts = search.split('&');
+
+                for (var i=0, iLen=parts.length; i<iLen; i++ ) {
+                    part = parts[i].split('=');
+                    values[part[0]] = window.decodeURIComponent(part[1]);
+                }
+            }
+        return values;
+        }
+        
+        var urldata = getURLValues();
+        console.log(urldata['forcexmas']);
+        if (urldata['forcexmas'] == "1");
+            loadxmas();
+
         if (cMonth == 12) {
+            loadxmas();
+        }
+        
+        function loadxmas(){
         var head = document.getElementsByTagName('HEAD')[0]; 
   
         // Create new link Element
@@ -82,7 +108,7 @@
             <h2>Projects</h2>
             <button style="animation-delay: 0.6s;" onclick="document.location='https://github.com/mobilex1122/mobilex1122.github.io/'">Backup Web</button><br>
             <button style="animation-delay: 900ms;" onclick="document.location='https://github.com/mobilex1122/peta-cz-assistent'">Peta-cz-assistent</button><br>
-            
+            <a id="test"></a>
         </div>
     </body>
 </html>
