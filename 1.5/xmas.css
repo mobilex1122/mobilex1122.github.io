@@ -26,6 +26,7 @@
 
 
 .bgtest {
+    background-color: black;
     background-image: url("particles.png");
     background-repeat: repeat;
     animation: 10s linear .1s bgloop infinite;
