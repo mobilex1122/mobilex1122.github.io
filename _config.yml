@@ -30,8 +30,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 main_menu:
-  home: /
-  The About: /about/
+  Home: /
+  About: /about/
+  Blog: /blog/
 
 # Build settings
 #remote_theme: pages-themes/minimal@v0.2.0
@@ -41,6 +42,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-postcss
   - jekyll-admin
+  - jekyll-paginate
 
 defaults:
   -
@@ -48,6 +50,18 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Jan Palma"
+
+permalink: /blog/post/:title/
+
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 postcss:
   cache: false

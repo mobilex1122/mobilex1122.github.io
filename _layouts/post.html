@@ -4,7 +4,7 @@ layout: default
 
 
 <div>
-  <header class="post-header container mx-auto px-2">
+  <header class="post-header cont">
     <h1 class="post-title p-name text-3xl" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -29,7 +29,7 @@ layout: default
     <hr>
   </header>
 
-  <div class="container mx-auto px-2 md" itemprop="articleBody">
+  <div class="cont md" itemprop="articleBody">
     {{ content }}
   </div>
 

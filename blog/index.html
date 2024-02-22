@@ -1,0 +1,37 @@
+---
+title: Blog
+---
+<section class="cont">
+  <h1>Blog</h1>
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
+    
+    {% for post in paginator.posts %}
+    <div class="bg-gray-900 p-2 rounded-md">
+      <div class="bg-gray-800 h-32 rounded-md overflow-hidden">
+        <img src="{{ post.thumbnail }}" alt="">
+      </div>
+      <h1 class="my-2 font-bold">{{ post.title }}</h1>
+      <p class="date">By: {{ post.author }}</p>
+      <p class="date mb-2">On: {{ post.date | date_to_string }}</p>
+      
+      <a class="block text-center p-2 rounded-md bg-gray-800 hover:bg-blue-950 hover:text-blue-600" href="{{ post.url }}">Read</a>
+    </div>
+    {% endfor %}
+
+    
+  </div>
+  <hr class="border-gray-800 my-3">
+  <div class="flex justify-center gap-1">
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="bg-blue-900 text-blue-300 p-2 rounded-full">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a class="bg-gray-800 hover:bg-blue-950 hover:text-blue-500 p-2 rounded-full" href="{{ '/blog/' | relative_url }}">{{ page }}</a>
+      {% else %}
+        <a class="bg-gray-800 hover:bg-blue-950 hover:text-blue-500 p-2 rounded-full" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</section>

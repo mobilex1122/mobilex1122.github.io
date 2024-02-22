@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem "jekyll-postcss", "~> 0.5.0"
 
   gem "jekyll-admin", "~> 0.11.1"
+  gem "jekyll-paginate"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

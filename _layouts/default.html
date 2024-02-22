@@ -12,7 +12,7 @@
     <![endif]-->
     {% include head-custom.html %}
 
-
+      <debug class="hidden"> {{page.dir}} </debug>
   </head>
   <body class="bg-gray-950 text-white">
     <div class="wrapper flex flex-col justify-start items-stretch min-h-screen">
@@ -24,12 +24,18 @@
         {% endif %}
 
         <div class="flex items-center gap-2">
+          <!-- Displays Main menu links (stored in config) -->
           {% for item in site.main_menu %}
-            <a class="" href="{{ item[1] }}">{{ item[0] }}</a>
+            {% if item[1] == page.url or item[0] == page.title %}
+              {% assign active = "bg-blue-950 text-blue-400 hover:bg-blue-950" %}
+            {% else %}
+              {% assign active = "" %}
+            {% endif %}
+            <a class="px-2 py-1 rounded-md hover:bg-gray-800 {{ active }}" href="{{ item[1] }}">{{ item[0] }}</a>
           {% endfor %}
         </div>
       </nav>
-      <section class="flex-grow">
+      <section class="flex-grow px-2 my-2">
 
       {{ content }}
 

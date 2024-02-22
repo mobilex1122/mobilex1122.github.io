@@ -1,13 +1,18 @@
 ---
 ---
-
 /* Example using Tailwind */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer components {
+    .cont {
+        @apply sm:container sm:mx-auto;
+    }
+}
+
 .md h2 {
-    @apply text-4xl
+    @apply text-3xl
 }
 .md .highlight {
     @apply bg-zinc-800 p-1 rounded-md
