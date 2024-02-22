@@ -1,0 +1,14 @@
+---
+---
+
+/* Example using Tailwind */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.md h2 {
+    @apply text-4xl
+}
+.md .highlight {
+    @apply bg-zinc-800 p-1 rounded-md
+}
